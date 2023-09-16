@@ -8,7 +8,7 @@ function Hero() {
       <div className="HeroContainerStyles">
         <div className="cicle">
         <h2>Spring is Coming!!</h2>
-        <img src="public/images/pngegg.png" alt="spring" />
+        <img src="/images/pngegg.png" alt="spring" />
         </div>
        
         
