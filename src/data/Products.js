@@ -6,7 +6,7 @@ export const products = [
       desc: "Calzas deportivas elegantes con detalles de encaje en los costados.",
       price: 44.99,
       category: "Calzas",
-      img: "public/images/img1.jpg",
+      img: "/images/img1.jpg",
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ export const products = [
       desc: "Top deportivo con tejido transpirable para mantenerse fresca durante el ejercicio.",
       price: 27.99,
       category: "Tops",
-      img: "public/images/img2.jpg",
+      img: "/images/img2.jpg",
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ export const products = [
       desc: "Calzas de alto rendimiento con tecnología que mejora el soporte muscular.",
       price: 49.99,
       category: "Calzas",
-      img: "public/images/img3.jpg",
+      img: "/images/img3.jpg",
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ export const products = [
       desc: "Top deportivo con diseño moldeador que realza la figura.",
       price: 32.99,
       category: "Tops",
-      img: "public/images/img4.jpg",
+      img: "/images/img4.jpg",
     },
     {
       id: 5,
@@ -38,7 +38,7 @@ export const products = [
       desc: "Calzas estampadas con motivos florales para un look fresco y primaveral.",
       price: 37.99,
       category: "Calzas",
-      img: "public/images/img5.jpg",
+      img: "/images/img5.jpg",
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ export const products = [
       desc: "Top deportivo con detalles reflectantes para mayor visibilidad en la oscuridad.",
       price:31.99,
       category: "Tops",
-      img: "public/images/img6.jpg",
+      img: "/images/img6.jpg",
     },
     {
       id: 7,
@@ -54,7 +54,7 @@ export const products = [
       desc:"Calzas de compresión que estimulan la circulación sanguínea durante el ejercicio.",
       price: 54.99,
       category: "Calzas",
-      img: "public/images/img7.jpg",
+      img: "/images/img7.jpg",
     },
     {
       id: 8,
@@ -62,7 +62,7 @@ export const products = [
       desc: "Top deportivo de alto soporte para actividades de alta intensidad.",
       price: 36.99,
       category: "Tops",
-      img:"public/images/img8.jpg", 
+      img:"/images/img8.jpg", 
     },
   ];
   

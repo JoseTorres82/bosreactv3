@@ -4,7 +4,7 @@ import { SliderHeroContainer } from "./HeroSliderStyles";
 function HeroSlider() {
   return (
     <SliderHeroContainer>
-      <img src="/public/images/img14-removebg.png" alt="img14" />
+      <img src="/images/img14-removebg.png" alt="img14" />
 
       <div className="textSlider">
         <div className="contenedorSlider">
