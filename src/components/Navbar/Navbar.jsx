@@ -8,10 +8,10 @@ function Navbar() {
       <Navlinks>
         <div className="contenedorLinks">
         <Link to="/">Home</Link>
-        <Link to="/">Nosotros</Link>
-        <Link to="/">Productos</Link>
+        <Link to="/Nosotros">Nosotros</Link>
+        <Link to="/Productos">Productos</Link>
         <Link to="/">Ofertas</Link>
-        <Link to="/">Contacto</Link>
+        <Link to="/Contacto">Contacto</Link>
         </div>
       </Navlinks>
     </NavbarContainer>

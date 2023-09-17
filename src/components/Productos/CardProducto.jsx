@@ -7,12 +7,19 @@ import {
   ProductosCard,
 } from "./CardsProductosStyles";
 
+function mostrarImagenDefault(event) {
+  event.target.src = '/bo_Logo.svg';
+  event.target.style.maxWidth = '380px';
+  event.target.style.display = 'flex';
+  event.target.style.height = 'auto'; 
+
+}
 
 const CardProducto = ({ img, title, desc, price, BtnAdd }) => {
   return (
     
     <ProductosCard>
-      <img src={img} alt={title} />
+      <img src={img} alt={title} onError={mostrarImagenDefault} />
       <div className="intro">
         <h3>{title}</h3>
         <p>{desc}</p>
@@ -28,7 +35,6 @@ const CardProducto = ({ img, title, desc, price, BtnAdd }) => {
     </ProductosCard>
     
   );
-  
 };
 
 export default CardProducto;

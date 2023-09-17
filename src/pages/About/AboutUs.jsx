@@ -8,7 +8,7 @@ function AboutUs() {
   return (
     <AboutWrapper>
       <MediaWrapper>
-        <video src="/HeroMove0.webm" autoPlay muted></video>
+        <img src="/images/img20.jpg" alt="aboutImg" />
       </MediaWrapper>
       <section>
         <h2>

@@ -19,10 +19,10 @@ export const AboutWrapper = styled.section`
  color: #131415;
 
   section{
-    max-width: 900px;
+    max-width: 1200px;
     margin  :0 auto ;
-    padding: 10px;
-    margin-top: 20px;
+    width: 100%;
+ 
 
   }
   
@@ -46,19 +46,16 @@ export const AboutWrapper = styled.section`
 `;
 
 export const MediaWrapper = styled.section`
-  max-width: 1200px;
+  max-width: 100vw;
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  top: 0;
+  /* object-fit: contain; */
   overflow: hidden;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  video {
-    border-radius: 15px;
-    max-width: 100vw;
-    margin: 0 auto;
-    width: fit-content;
-  }
+  border-radius: 3px;
+ 
 `;

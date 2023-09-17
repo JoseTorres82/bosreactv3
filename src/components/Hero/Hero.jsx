@@ -7,7 +7,7 @@ function Hero() {
     <HeroStyledContainer>
       <div className="HeroContainerStyles">
         <div className="cicle">
-        <h2>Spring is Coming!!</h2>
+        {/* <h2>Spring is Coming!!</h2> */}
         <img src="/images/pngegg.png" alt="spring" />
         </div>
        

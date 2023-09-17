@@ -12,6 +12,14 @@ export const SliderHeroContainer = styled.div`
     width: 400px;
     height: auto;
     position: absolute;
+    animation: imganimation;
+    animation-duration: 5s;
+
+    @keyframes imganimation {
+        0%{opacity:0%;}
+        50%{}
+        100%{}
+    }
   }
 
   .contenedorSlider {
@@ -78,10 +86,18 @@ export const SliderHeroContainer = styled.div`
     opacity: 50%;
     z-index: 3;
     position: absolute;
+    animation: circleanimation2;
+    animation-duration: 8s;
     transition: all ease-in-out .3s;
     @media (max-width:761px){
         display: none;
     }
+    @keyframes circleanimationreverse2 {
+        0% {transform:rotate(-45deg) }
+        50% {transform:rotate(-75deg)}
+        100%{transform:rotate(-95deg) }
+    }
+
   }
   .cicle3 {
     display: flex;
@@ -94,10 +110,19 @@ export const SliderHeroContainer = styled.div`
     opacity: 50%;
     z-index: 3;
     position: absolute;
+    animation: circleanimation;
+    animation-duration: 8s;
     transition: all ease-in-out .3s;
     transform: rotate(15deg);
+  
     @media (max-width:761px){
         display: none;
+    }
+    @keyframes circleanimation {
+        0% {transform:rotate(30deg);
+        background-color:cyan; }
+        50% {transform:rotate(75deg)}
+        100%{transform:rotate(90deg) }
     }
   }
   .cicle4 {
@@ -111,10 +136,17 @@ export const SliderHeroContainer = styled.div`
     opacity: 60%;
     z-index: 3;
     position: absolute;
+    animation: circleanimation2;
+    animation-duration: 8s;
     transform: rotate(35deg);
     transition: all ease-in-out .3s;
+
     @media (max-width:761px){
         display: none;
+      
     }
   }
+
+ 
+
 `;

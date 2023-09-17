@@ -43,7 +43,7 @@ export const ProductosContainer = styled.div`
   }
 `;
 export const ProductosCard = styled.div`
-  width: 280px;
+  width: 300px;
   height: 450px;
   overflow: hidden;
   margin: 1px;

@@ -4,7 +4,6 @@ import { products } from '../../data/Products'
 import CardProducto from './CardProducto'
 
 /* import Button from '../UI/Button/Button' */
-
 const CardsProductos = () => {
     return (
         

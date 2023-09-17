@@ -37,6 +37,7 @@ export const Navlinks = styled.nav`
   color: #131415;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  z-index: 99;
 
   .contenedorLinks{
     width: 100%;
