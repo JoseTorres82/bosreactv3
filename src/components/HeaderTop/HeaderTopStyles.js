@@ -31,17 +31,18 @@ export const HeaderTopStyledContainer = styled.div`
   
   .TopContent {
     max-width: 50vw;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 100%;
-    height: 100%;
-    color: #f5f5f5;
+    height: fit-content;
+    color: rgb(245, 245, 245);
     display: flex;
+    flex-flow: wrap;
     justify-content: flex-end;
     align-items: center;
-    gap: 15px;
-    font-family: "Roboto", sans-serif;
+    gap: 5px;
+    font-family: Roboto, sans-serif;
     font-size: 0.8rem;
-    text-transform:uppercase ;
+    text-transform: uppercase;
     font-weight: 500;
   }
 

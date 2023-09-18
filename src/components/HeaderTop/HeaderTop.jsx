@@ -14,6 +14,7 @@ function HeaderTop() {
         <BannerCarrusel />
         <div className="TopContent">
           <Link to="/">Crear Cuenta</Link>
+          <span>•</span>
           <Link to="/login">Login</Link>
           <Link to="/"><AiOutlineFacebook /></Link>
           <Link to="/"><AiOutlineInstagram /></Link>
