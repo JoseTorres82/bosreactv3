@@ -8,8 +8,9 @@ import {
 } from "./CardsProductosStyles";
 
 function mostrarImagenDefault(event) {
-  event.target.src = '/bo_Logo.svg';
-  event.target.style.maxWidth = '380px';
+  event.target.src = '/bo_Logo.svg' ;
+  event.target.style.maxWidth = '450px';
+  event.target.style.marginTop= '70px';
   event.target.style.display = 'flex';
   event.target.style.height = 'auto'; 
 

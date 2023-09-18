@@ -8,7 +8,8 @@ const CardsProductos = () => {
     return (
         
       <ProductosWrapper>
-          <h2 id='destacados' >Nuestros Productos</h2>
+          <h2 id='destacados' > Nuestra Colección</h2>
+          <img src="/images/1.jpg" alt="" />
           <ProductosContainer>
               {
                   products.map((stock) => {

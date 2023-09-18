@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans:wght@400;700&family=Poppins:wght@300;400;500&display=swap');
 
   :root {
     color: #213547;
@@ -20,9 +19,12 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden  
   }
   a {
+    color: #131415;
     text-decoration: none;
 
   }
  
-
+  &a:visited {
+    color: #131415;
+  }
 `;

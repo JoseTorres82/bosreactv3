@@ -15,12 +15,16 @@ export const ProductosWrapper = styled.section`
 
   h2 {
     text-align: left;
-    /* color: #f5f5f5; */
     width: 100%;
     color: #6e6043;
     margin-top: 60px;
     border-bottom: #131415 1px solid;
     text-transform: uppercase;
+  }
+  img {
+    max-height: 450px;
+    margin: 0 auto;
+    width: 100%;
   }
 `;
 
@@ -37,18 +41,20 @@ export const ProductosContainer = styled.div`
   color: #f5f5f5;
   gap: 5px;
 
+
   @media (max-width: 767px) {
     flex-flow: wrap;
     gap: 10px;
   }
 `;
 export const ProductosCard = styled.div`
-  width: 300px;
+  width: 280px;
   height: 450px;
   overflow: hidden;
   margin: 1px;
   border-radius: 3px;
   position: relative;
+  box-shadow: 8px 9px 10px rgba(0, 0, 0, 0.2);
 
   img {
     height: 450px;
@@ -127,8 +133,13 @@ export const ProductosCard = styled.div`
     background: #000;
   }
   .intro:hover p {
+    max-width: 250px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
     visibility: visible;
     opacity: 1;
+  
   }
 
   .oferta-icon {
@@ -184,7 +195,6 @@ export const ContainerBtnAdd = styled.div`
     display: inline-block;
     border-radius: 0px 5px 0px 10px;
     background: #6e6043;
-    /* background-color: #f4511e; */
     border: none;
     color: #ffffff;
     text-align: center;
@@ -223,6 +233,7 @@ export const ContainerBtnAdd = styled.div`
     opacity: 1;
     right: 0;
   }
+
 `;
 
 export const CardPrice = styled.span`

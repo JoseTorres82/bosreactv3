@@ -111,7 +111,7 @@
       desc: "Buzo deportivo con detalles reflectantes para mayor visibilidad durante el entrenamiento nocturno.",
       price: 47.99,
       category: "Buzos",
-      img: "/images/img14.jpg",
+      img: "/* /images/img14.jpg */",
     },
     {
       id: 15,
