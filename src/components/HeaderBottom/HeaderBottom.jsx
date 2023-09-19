@@ -10,14 +10,13 @@ function HeaderBottom() {
       <div className="container">
         <div className="ContenedorNavegacion">
         <div className="search">
-          <h3>
-            Buscador <AiOutlineSearch />
-          </h3>
+          <input type='text' placeholder='Buscar'></input> <AiOutlineSearch />
         </div>
         <Link to="/">
           <img src="logo.svg" alt="Header Logo" />
         </Link>
         <div className="bagContainer">
+          <span>0</span>
           <TfiBag className="bag" />
         </div>
         </div>

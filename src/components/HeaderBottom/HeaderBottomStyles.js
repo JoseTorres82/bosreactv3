@@ -36,8 +36,25 @@ export const HeaderBottomStyled = styled.div`
     }
   }
   .bagContainer{
-        width: 40px;
+        width: 60px;
         height: auto;
+        display: flex;
+        gap: 1px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        span{
+          color: #FFF;
+          background-color: red;
+          padding: 2%;
+          border-radius: 50%;
+          width: 30%;
+          height: auto;
+          font-weight: 400;
+          text-align: center;
+          position: absolute;
+          margin-right: 35px ;
+        }
     }
     .bag{
         max-width: 250px;
