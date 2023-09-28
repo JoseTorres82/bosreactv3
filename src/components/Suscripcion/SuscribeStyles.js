@@ -1,7 +1,7 @@
 import Styled, { styled }  from "styled-components";
 
 export const SuscribeStyled = styled.section` 
- max-width: 1200px;
+ max-width: 900px;
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
@@ -9,17 +9,7 @@ export const SuscribeStyled = styled.section`
   padding: 24px;
 
   
-/* .newsletter-container{
 
-width: 100%;
-height: 300px;
-padding: 20px;
-color: #131415;
-font-family: "Lato",Helvetica,Arial,sans-serif;
-box-sizing: inherit;
-
-text-align: center;
-} */
 .section-newsletter-home {
   max-width: 1200px;
   margin: 0 auto;

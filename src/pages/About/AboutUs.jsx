@@ -1,16 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { MediaWrapper } from "../../pages/About/AboutStyles";
 import { AboutWrapper } from "../../pages/About/AboutStyles";
-import Subscribe from "../../components/Suscripcion/Suscribe";
+
 
 function AboutUs() {
   return (
     <AboutWrapper>
       <MediaWrapper>
         <img src="/images/img20.jpg" alt="aboutImg" />
-      </MediaWrapper>
-      <section>
+        <section>
         <h2>
           ¡Bienvenidos a <span>Buenas Olas Store</span>!
         </h2>
@@ -34,8 +34,15 @@ function AboutUs() {
           increíble mientras te sumerges en la relajada elegancia de Mar del
           Plata. Gracias por elegirnos, El equipo de Buenas Olas Store
         </p>
+        <div className="LogoAbout">
+        <Link to="/">
+          <img src="logo.svg" alt="Header Logo" className="LogoAbout" />
+        </Link>
+        </div>
       </section>
-      <Subscribe />
+      </MediaWrapper>
+      
+  
     </AboutWrapper>
     
   );
