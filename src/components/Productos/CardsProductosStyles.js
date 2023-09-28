@@ -1,25 +1,31 @@
 import styled from "styled-components";
 
 export const ProductosWrapper = styled.section`
-  max-width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   font-family: "PT Sans", sans-serif;
-  padding: 1rem;
-  top: 20px;
-  @media (min-width: 320px) {
+/*   padding: 1rem; */
+  margin-top: 30px;
+/*   @media (min-width: 320px) {
     margin: 0 auto;
-    margin-top: 70px;
-  }
+    margin-top: 50px;
+  } */
 
   h2 {
-    text-align: left;
+    text-align: center;
     width: 100%;
-    color: #6e6043;
-    margin-top: 60px;
+    /* color: #6e6043; */
+    color: #fefefe;
+    background-color: #6e6043;
+    margin-top: 40px;
     border-bottom: #131415 1px solid;
     text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: xx-large;
   }
   img {
     max-height: 450px;
@@ -40,7 +46,6 @@ export const ProductosContainer = styled.div`
   margin-bottom: 20px;
   color: #f5f5f5;
   gap: 5px;
-
 
   @media (max-width: 767px) {
     flex-flow: wrap;
@@ -139,7 +144,6 @@ export const ProductosCard = styled.div`
     text-align: center;
     visibility: visible;
     opacity: 1;
-  
   }
 
   .oferta-icon {
@@ -233,7 +237,6 @@ export const ContainerBtnAdd = styled.div`
     opacity: 1;
     right: 0;
   }
-
 `;
 
 export const CardPrice = styled.span`
@@ -248,4 +251,5 @@ export const ButtonContainerStyled = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 3rem;
+  
 `;

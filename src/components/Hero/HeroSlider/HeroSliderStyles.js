@@ -3,27 +3,33 @@ import styled from "styled-components";
 export const SliderHeroContainer = styled.div`
   max-width: 100vw;
   margin: 0 auto;
-  height: 400px;
+  height: 452px;
   background-color: lightcoral;
   display: flex;
   position: relative;
+  margin-top: 30px;
 
   img {
-    width: 400px;
+    width: 350px;
     height: auto;
     position: absolute;
     animation: imganimation;
     animation-duration: 5s;
+    z-index: 4;
 
     @keyframes imganimation {
-        0%{opacity:0%;}
-        50%{}
-        100%{}
+      0% {
+        opacity: 0%;
+      }
+      50% {
+      }
+      100% {
+      }
     }
   }
 
   .contenedorSlider {
-    max-width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -33,7 +39,7 @@ export const SliderHeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     right: 10px;
-    /*    margin-top: 60px; */
+
     position: absolute;
     color: #6e6043;
 
@@ -58,22 +64,20 @@ export const SliderHeroContainer = styled.div`
 
       h1 {
         color: #f5f5f5;
-        font-size: 46px;
+        font-size: 36px;
         text-shadow: rgb(0, 0, 0) 1px 3px 5px;
         z-index: 5;
       }
-     
     }
-    @media (max-width:761px){
+    @media (max-width: 761px) {
+      margin: 0 auto;
+      .title h1 {
+        max-width: 250px;
         margin: 0 auto;
-        .title h1{
-            max-width: 250px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
+        display: flex;
+        flex-wrap: wrap;
       }
+    }
   }
   .cicle2 {
     display: flex;
@@ -88,16 +92,24 @@ export const SliderHeroContainer = styled.div`
     position: absolute;
     animation: circleanimation2;
     animation-duration: 8s;
-    transition: all ease-in-out .3s;
-    @media (max-width:761px){
-        display: none;
+    transition: all ease-in-out 0.3s;
+    @media (max-width: 761px) {
+      display: none;
     }
     @keyframes circleanimationreverse2 {
-        0% {transform:rotate(-45deg) }
-        50% {transform:rotate(-75deg)}
-        100%{transform:rotate(-95deg) }
+      0% {
+        transform: rotate(-45deg);
+      }
+      50% {
+        transform: rotate(-65deg);
+      }
+      80% {
+        transform: rotate(-85deg);
+      }
+      100% {
+        transform: rotate(-95deg);
+      }
     }
-
   }
   .cicle3 {
     display: flex;
@@ -112,17 +124,26 @@ export const SliderHeroContainer = styled.div`
     position: absolute;
     animation: circleanimation;
     animation-duration: 8s;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out 0.3s;
     transform: rotate(15deg);
-  
-    @media (max-width:761px){
-        display: none;
+
+    @media (max-width: 761px) {
+      display: none;
     }
     @keyframes circleanimation {
-        0% {transform:rotate(30deg);
-        background-color:cyan; }
-        50% {transform:rotate(75deg)}
-        100%{transform:rotate(90deg) }
+      0% {
+        transform: rotate(30deg);
+        background-color: cyan;
+      }
+      50% {
+        transform: rotate(75deg);
+      }
+      80% {
+        transform: rotate(85deg);
+      }
+      100% {
+        transform: rotate(90deg);
+      }
     }
   }
   .cicle4 {
@@ -139,14 +160,10 @@ export const SliderHeroContainer = styled.div`
     animation: circleanimation2;
     animation-duration: 8s;
     transform: rotate(35deg);
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out 0.3s;
 
-    @media (max-width:761px){
-        display: none;
-      
+    @media (max-width: 761px) {
+      display: none;
     }
   }
-
- 
-
 `;

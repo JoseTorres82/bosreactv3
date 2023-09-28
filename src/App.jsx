@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
     {/*   <CartProvider>  */}
-        <HeaderTop />
+        {/* <HeaderTop /> */}
         <Header />
         
         <Layout>

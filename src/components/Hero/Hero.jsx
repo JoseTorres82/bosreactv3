@@ -1,17 +1,16 @@
 import React from "react";
 import { HeroStyledContainer } from "./HeroStyles";
 import HeroSlider from "./HeroSlider/HeroSlider";
+import HeroSide from "./HeroSide/HeroSide";
 
 function Hero() {
   return (
     <HeroStyledContainer>
       <div className="HeroContainerStyles">
-        <div className="cicle">
-        <img src="/images/pngegg.png" alt="spring" />
-        </div>
-       
-        
         <HeroSlider />
+      </div>
+      <div className="HeroSiderContainer">
+      <HeroSide />
       </div>
     </HeroStyledContainer>
   );

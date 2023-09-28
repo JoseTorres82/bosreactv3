@@ -21,7 +21,7 @@
       desc: "Calzas de alto rendimiento con tecnología que mejora el soporte muscular.",
       price: 49.99,
       category: "Calzas",
-      img: "/images/img3.jpg",
+      img: "/images/img10.jpg",
     },
     {
       id: 4,
@@ -37,7 +37,7 @@
       desc: "Calzas estampadas con motivos florales para un look fresco y primaveral.",
       price: 37.99,
       category: "Calzas",
-      img: "/images/img5.jpg",
+      img: "/images/img24.jpg",
     },
     {
       id: 6,
@@ -45,7 +45,7 @@
       desc: "Top deportivo con detalles reflectantes para mayor visibilidad en la oscuridad.",
       price: 31.99,
       category: "Tops",
-      img: "/images/img6.jpg",
+      img: "/images/img25.jpg",
     },
     {
       id: 7,

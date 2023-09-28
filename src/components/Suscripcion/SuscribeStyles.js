@@ -49,7 +49,7 @@ text-align: center;
   place-items: center;
 }
 .section-newsletter-home .email-inp {
-  max-width: 1100px;
+  max-width: 600px;
   margin: 0 auto;
   width: 100%;
   padding: 10px;

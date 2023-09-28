@@ -1,8 +1,9 @@
 import React from "react";
 import { HeaderBottomStyled } from "./HeaderBottomStyles";
-import { AiOutlineSearch } from "react-icons/ai";
+
 import { TfiBag } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import SearchBar from "../SearchBar/SearchBar";
 
 function HeaderBottom() {
   return (
@@ -10,7 +11,7 @@ function HeaderBottom() {
       <div className="container">
         <div className="ContenedorNavegacion">
         <div className="search">
-          <input type='text' placeholder='Buscar'></input> <AiOutlineSearch />
+          <SearchBar/>
         </div>
         <Link to="/">
           <img src="logo.svg" alt="Header Logo" />

@@ -6,9 +6,11 @@ import {
   ContainerPrice,
   ProductosCard,
 } from "./CardsProductosStyles";
+import ButtonMoreInfo from "../UI/Buttons/ButtonMoreInfo";
 
 function mostrarImagenDefault(event) {
-  event.target.src = '/bo_Logo.svg' ;
+  event.target.src = '/bo_Logo.svg';
+  event.target.alt ='imagen no disponible';
   event.target.style.maxWidth = '450px';
   event.target.style.marginTop= '70px';
   event.target.style.display = 'flex';
@@ -25,7 +27,7 @@ const CardProducto = ({ img, title, desc, price, BtnAdd }) => {
         <h3>{title}</h3>
         <p>{desc}</p>
         <div className="btn-moreInfo">
-        <button><span>Más Info.</span></button>
+          <ButtonMoreInfo />
         </div>
       </div>  
       <ContainerPrice>
