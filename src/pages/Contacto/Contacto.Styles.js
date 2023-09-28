@@ -6,7 +6,8 @@ export const ContactoWrapper = styled.form`
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     border-radius: 3px;
     font-family: 'PT Sans'sans-serif;
     margin-top: 80px;
