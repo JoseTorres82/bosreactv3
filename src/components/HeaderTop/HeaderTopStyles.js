@@ -5,7 +5,7 @@ export const HeaderTopStyledContainer = styled.div`
   margin: 0 auto;
   width: 100%;
   height: 0.8rem;
-  padding: 0.75rem 0.25rem;
+  padding: 0.75rem 0rem;
   background: #131415;
   border-bottom: solid thin #ccc;
   margin-top: 0;
