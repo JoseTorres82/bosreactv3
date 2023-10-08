@@ -1,4 +1,4 @@
-/* /* import React from "react";
+import React from "react";
 import { NavbarContainer, Navlinks } from "./NavbarStyles";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -20,7 +20,7 @@ function Navbar() {
 }
 
 export default Navbar;
- */
+/* 
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
@@ -139,4 +139,4 @@ const BgDiv = styled.div`
     height: 100%;
   }
 `
- 
+  */

@@ -4,10 +4,12 @@ export const SliderHeroContainer = styled.div`
   max-width: 100vw;
   margin: 0 auto;
   height: 452px;
-  background-color: lightcoral;
+/*   background-color: lightcoral; */
+background-color: #388f9b;
   display: flex;
   position: relative;
   margin-top: 30px;
+  opacity: 95%;
 
   img {
     width: 350px;

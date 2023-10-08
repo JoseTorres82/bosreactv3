@@ -58,6 +58,26 @@ export const SuscribeStyled = styled.section`
     font-weight: 700;
     border-bottom: solid 5px #6e6043;
     transition: all ease-in-out 0.2s;
+    @media (max-width: 761px){
+      .section-newsletter-home{
+        max-width: 100vw;
+        margin: 0;
+       padding: 0;
+        width: 100%;
+
+        display: block;
+      }
+      .newsletter-container {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        display: block;
+
+      } 
+      .btn-primary {
+        width: 100%;
+      }
+    }
   }
   .section-newsletter-home .btn-primary:hover {
     background: #6e6043;
