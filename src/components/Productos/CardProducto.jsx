@@ -1,8 +1,8 @@
 import React from "react";
-
+import ButtonAdd from "../UI/Buttons/ButtonAdd";
 import {
   CardPrice,
-  ContainerBtnAdd,
+ ContainerBtnAdd,
   ContainerPrice,
   ProductosCard,
 } from "./CardsProductosStyles";
@@ -33,7 +33,8 @@ const CardProducto = ({ img, title, desc, price, BtnAdd }) => {
       <ContainerPrice>
         <CardPrice>${price}</CardPrice>
       </ContainerPrice>
-      <ContainerBtnAdd><button><span>Agregar</span></button>
+      <ContainerBtnAdd>
+      {/* <ButtonAdd /> */}
       </ContainerBtnAdd>
     </ProductosCard>
     

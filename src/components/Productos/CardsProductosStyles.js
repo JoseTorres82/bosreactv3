@@ -6,13 +6,75 @@ export const ProductosWrapper = styled.section`
   flex-direction: column;
   /* margin-top: 15px; */
   font-family: "PT Sans", sans-serif;
-/*   padding: 1rem; */
+  /*   padding: 1rem; */
   margin-top: 30px;
-/*   @media (min-width: 320px) {
+  /*   @media (min-width: 320px) {
     margin: 0 auto;
     margin-top: 50px;
   } */
+  /* Agrega este CSS a tu archivo de estilos o componente CSS-in-JS */
 
+.search-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  right: -5;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #131415;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+  .btns-filter {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+
+    button{
+      border: none;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+      /* border-radius: 5px; */
+      box-shadow: #6e6043   0.5px 0px;
+      background: none;
+      transition: all ease-in-out .3s;
+      &:hover{
+        background-color: #6e6043;
+        color: #fff;
+      }
+    }
+  }
   h2 {
     text-align: center;
     width: 100%;
@@ -35,8 +97,9 @@ export const ProductosWrapper = styled.section`
 `;
 
 export const ProductosContainer = styled.div`
-  max-width: 100vw;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100vw;
   height: auto;
   margin-top: 20px;
   display: flex;
@@ -251,5 +314,8 @@ export const ButtonContainerStyled = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 3rem;
-  
 `;
+
+export const CardsWrapper =styled.div `
+display: flex;
+` 

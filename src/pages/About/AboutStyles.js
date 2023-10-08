@@ -51,7 +51,7 @@ export const MediaWrapper = styled.section`
     opacity: 35%;
     background-color: #333;
     border-radius: 15px;
-    height: fit-content;
+height: auto;
   }
   section{
     position: absolute;

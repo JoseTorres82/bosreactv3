@@ -1,9 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 /* import { BtnMore } from './ButtonsStyles' */
 
 function ButtonMoreInfo() {
   return (
-    <button><span>Más Info.</span></button>
+    <Link to="/Productos"><button><span>Más Info.</span></button></Link>
   )
 }
 

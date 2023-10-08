@@ -15,11 +15,7 @@ function AboutUs() {
           ¡Bienvenidos a <span>Buenas Olas Store</span>!
         </h2>
         <p>
-          Somos tu destino en línea para encontrar los outfits más modernos y
-          frescos en Mar del Plata, Buenos Aires, Argentina. Nuestra pasión por
-          la moda se refleja en nuestra cuidadosa selección de calsas y tops
-          estampados y lisos que te harán lucir y sentirte increíble en cada
-          ocasión. En Buenas Olas Store, creemos en la combinación perfecta de
+           En Buenas Olas Store, creemos en la combinación perfecta de
           estilo y comodidad. Nuestra colección está diseñada pensando en
           hombres y mujeres que buscan prendas versátiles que se adapten a su
           estilo de vida activo y relajado. Ya sea que estés paseando por la

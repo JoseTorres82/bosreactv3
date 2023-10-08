@@ -3,7 +3,7 @@ import { HeaderBottomStyled } from "./HeaderBottomStyles";
 
 import { TfiBag } from "react-icons/tfi";
 import { Link } from "react-router-dom";
-import SearchBar from "../SearchBar/SearchBar";
+/* import SearchBar from "../SearchBar/SearchBar"; */
 
 function HeaderBottom() {
   return (
@@ -11,7 +11,7 @@ function HeaderBottom() {
       <div className="container">
         <div className="ContenedorNavegacion">
         <div className="search">
-          <SearchBar/>
+       <Link to='/'><h1>Buenas Olas <span>Store</span></h1> </Link>
         </div>
         <Link to="/">
           <img src="logo.svg" alt="Header Logo" />

@@ -25,6 +25,7 @@ export const HeroStyledContainer = styled.div`
     position: relative;
     z-index: 1;
     overflow:hidden;
+    margin-bottom: 25px;
    /*  margin-left: 10px; */
   }
 
