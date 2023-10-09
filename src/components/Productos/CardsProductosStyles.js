@@ -53,7 +53,7 @@ export const ProductosWrapper = styled.section`
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    padding: 10px;
+   /*  padding: 10px; */
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
