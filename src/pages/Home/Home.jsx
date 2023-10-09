@@ -11,7 +11,7 @@ function Home() {
       <Hero />
       <Destacados />
       <Banner />
-      <Subscribe />
+    {/*   <Subscribe /> */}
     </HomeWrapper>
   );
 }

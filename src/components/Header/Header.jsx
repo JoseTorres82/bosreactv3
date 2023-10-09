@@ -9,7 +9,7 @@ import HeaderBottom from '../HeaderBottom/HeaderBottom';
 function Header() {
   return (
     <HeaderStyled>
-      <HeaderTop />
+  {/*     <HeaderTop /> */}
       <HeaderBottom />
   
     <Navbar />

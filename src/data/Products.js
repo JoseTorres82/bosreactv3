@@ -5,7 +5,7 @@
       desc: "Calzas deportivas elegantes con detalles de encaje en los costados.",
       price: 44.99,
       category: "Calzas",
-      img: "/images/img1.jpg",
+      img: "/images/img1.webp",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@
       desc: "Top deportivo con tejido transpirable para mantenerse fresca durante el ejercicio.",
       price: 27.99,
       category: "Tops",
-      img: "/images/img9.jpg",
+      img: "/images/img9.webp",
     },
     {
       id: 3,
@@ -21,7 +21,7 @@
       desc: "Calzas de alto rendimiento con tecnología que mejora el soporte muscular.",
       price: 49.99,
       category: "Calzas",
-      img: "/images/img10.jpg",
+      img: "/images/img10.webp",
     },
     {
       id: 4,
@@ -29,7 +29,7 @@
       desc: "Top deportivo con diseño moldeador que realza la figura.",
       price: 32.99,
       category: "Tops",
-      img: "/images/img4.jpg",
+      img: "/images/img4.webp",
     },
     {
       id: 5,
@@ -37,7 +37,7 @@
       desc: "Calzas estampadas con motivos florales para un look fresco y primaveral.",
       price: 37.99,
       category: "Calzas",
-      img: "/images/img24.jpg",
+      img: "/images/img24.webp",
     },
     {
       id: 6,
@@ -45,7 +45,7 @@
       desc: "Top deportivo con detalles reflectantes para mayor visibilidad en la oscuridad.",
       price: 31.99,
       category: "Tops",
-      img: "/images/img25.jpg",
+      img: "/images/img25.webp",
     },
     {
       id: 7,
@@ -53,7 +53,7 @@
       desc: "Calzas de compresión que estimulan la circulación sanguínea durante el ejercicio.",
       price: 54.99,
       category: "Calzas",
-      img: "/images/img7.jpg",
+      img: "/images/img7.webp",
     },
     {
       id: 8,
@@ -61,7 +61,7 @@
       desc: "Top deportivo de alto soporte para actividades de alta intensidad.",
       price: 36.99,
       category: "Tops",
-      img: "/images/img8.jpg",
+      img: "/images/img8.webp",
     },
 
     {
@@ -70,7 +70,7 @@
       desc: "Buzo clásico de algodón para mantenerte abrigado y cómodo.",
       price: 39.99,
       category: "Buzos",
-      img: "/images/img17.jpg",
+      img: "/images/img17.webp",
     },
     {
       id: 10,
@@ -78,7 +78,7 @@
       desc: "Buzo deportivo con tecnología de control de humedad para mantenerse seco durante el ejercicio.",
       price: 45.99,
       category: "Buzos",
-      img: "images/img22.jpg",
+      img: "images/img22.webp",
     },
     // Productos adicionales de la categoría "Buzos"
     {
@@ -87,7 +87,7 @@
       desc: "Buzo perfecto para el invierno con forro de felpa.",
       price: 59.99,
       category: "Buzos",
-      img: "/images/img11.jpg",
+      img: "/images/img11.webp",
     },
     {
       id: 12,
@@ -95,7 +95,7 @@
       desc: "Buzo ligero y cómodo para actividades deportivas.",
       price: 34.99,
       category: "Buzos",
-      img: "/images/img12.jpg",
+      img: "/images/img12.webp",
     },
     {
       id: 13,
@@ -103,7 +103,7 @@
       desc: "Buzo con capucha ajustable para mantener el calor en los días fríos.",
       price: 42.99,
       category: "Buzos",
-      img: "/images/img18.jpg",
+      img: "/images/img18.webp",
     },
     {
       id: 14,
@@ -111,7 +111,7 @@
       desc: "Buzo deportivo con detalles reflectantes para mayor visibilidad durante el entrenamiento nocturno.",
       price: 47.99,
       category: "Buzos",
-      img: "/* /images/img14.jpg */",
+      img: "/* /images/img14.webp */",
     },
     {
       id: 15,
@@ -119,7 +119,7 @@
       desc: "Buzo con cremallera frontal para un fácil ajuste.",
       price: 38.99,
       category: "Buzos",
-      img: "/images/img21.jpg",
+      img: "/images/img21.webp",
     },
   ];
   
