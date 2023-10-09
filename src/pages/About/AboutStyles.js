@@ -102,4 +102,8 @@ export const MediaWrapper = styled.section`
 
     }
   }
+  @media (max-width:560px){
+    p{
+    font-size: 0.6rem;}
+  }
 `;

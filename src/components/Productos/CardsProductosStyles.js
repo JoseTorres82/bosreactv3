@@ -65,7 +65,6 @@ export const ProductosWrapper = styled.section`
       padding: 10px;
       margin: 5px;
       cursor: pointer;
-      /* border-radius: 5px; */
       box-shadow: #6e6043   0.5px 0px;
       background: none;
       transition: all ease-in-out .3s;
@@ -78,7 +77,6 @@ export const ProductosWrapper = styled.section`
   h2 {
     text-align: center;
     width: 100%;
-    /* color: #6e6043; */
     color: #fefefe;
     background-color: #6e6043;
     margin-top: 40px;
