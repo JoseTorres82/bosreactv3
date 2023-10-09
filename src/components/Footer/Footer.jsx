@@ -5,8 +5,8 @@ import { FooterContentBox } from "./FooterStyles";
 function Footer() {
   return (
     <FooterContentBox>
-    <div className="FooterMainBox">
-      <p>
+      <div className="FooterMainBox">
+        {/* <p>
         Buenas Olas Store es indumentaria de entrenamiento que provee calce
         anatómico, extraordinarios diseños, y propiedades técnicas que incluyen
         termorregulación, tejidos absorbentes e incremento de oxigenación en los
@@ -31,8 +31,12 @@ function Footer() {
       <Link>buscador </Link>
       <Link>contacto </Link>
       <Link>instagram </Link>
-      <Link>facebook</Link>
-    </div>
+      <Link>facebook</Link> */}
+        <div class="ocean">
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+      </div>
     </FooterContentBox>
   );
 }

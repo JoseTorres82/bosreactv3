@@ -111,4 +111,6 @@ export const Navlinks = styled.nav`
 	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
 	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
 }
+
+
 `;

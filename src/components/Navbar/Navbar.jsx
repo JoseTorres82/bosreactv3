@@ -5,7 +5,10 @@ import { Link, useNavigate } from "react-router-dom";
 function Navbar() {
   return (
     <NavbarContainer>
-      <a href="#" className="app-menu Burguer"><span></span></a>
+ 
+      <a href="#" className="app-menu Burguer">
+        <span></span>
+      </a>
       <Navlinks>
         <div className="contenedorLinks">
           <Link to="/">Home</Link>
@@ -15,6 +18,7 @@ function Navbar() {
           <Link to="/Contacto">Contacto</Link>
         </div>
       </Navlinks>
+      
     </NavbarContainer>
   );
 }

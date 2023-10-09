@@ -7,12 +7,9 @@ export const HeroStyledContainer = styled.div`
     width: 100%;
     height: fit-content;
     margin-top: 100px;
-    /* background-color: #6e6043; */
     display: flex;
     justify-content: center;
     align-items: center;
-/*     display: grid;
-    grid-template-columns: repeat( 2, 1fr); */
     overflow: hidden;
     gap: 5px;
     justify-items: center;
@@ -26,7 +23,6 @@ export const HeroStyledContainer = styled.div`
     z-index: 1;
     overflow:hidden;
     margin-bottom: 25px;
-   /*  margin-left: 10px; */
   }
 
   

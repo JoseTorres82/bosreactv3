@@ -4,6 +4,10 @@ import { SliderHeroContainer } from "./HeroSliderStyles";
 function HeroSlider() {
   return (
     <SliderHeroContainer>
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
       <img src="/images/img14-removebg.png" alt="img14" />
 
       <div className="textSlider">
