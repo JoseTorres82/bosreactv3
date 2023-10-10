@@ -103,13 +103,13 @@ export const FooterContentBox = styled.div`
     margin-bottom: 0px;
   }
   .footer-links {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     width: 100%;
     height: fit-content;
     gap: 15px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     padding: 10px;
     justify-items: space-evenly;
     color: #131415;
