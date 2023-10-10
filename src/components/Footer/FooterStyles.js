@@ -108,10 +108,11 @@ export const FooterContentBox = styled.div`
     width: 100%;
     height: fit-content;
     gap: 15px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(6, 1fr); */
     padding: 10px;
-    justify-items: space-evenly;
+    justify-content: center;
+    align-items: center;
     color: #131415;
   }
   .footer-links a {
@@ -196,7 +197,10 @@ export const FooterContentBox = styled.div`
     width: 300px;
     height: 250px;
   }
-  @media (max-width: 761px) {
+  @media (max-width: 992px) {
+    footer{
+      overflow: hidden;
+    }
     .footer-links {
       width: 100vw;
       display: grid;
