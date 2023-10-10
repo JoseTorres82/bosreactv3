@@ -82,7 +82,7 @@ export const FooterContentBox = styled.div`
   }
   /* footer */
   .footer {
-    max-width: 1200px;
+    max-width: 100vw;
     margin: 0 auto;
     width: 100%;
     text-decoration: none;
@@ -108,11 +108,10 @@ export const FooterContentBox = styled.div`
     width: 100%;
     height: fit-content;
     gap: 15px;
-    display: flex;
-    /* grid-template-columns: repeat(6, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     padding: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-items: space-evenly;
     color: #131415;
   }
   .footer-links a {
@@ -135,15 +134,14 @@ export const FooterContentBox = styled.div`
     column-gap: 15px;
     justify-content: center;
     align-items: center;
-    padding: 45px 0px;
+   /*  padding: 45px 0px; */
   }
 
   .footer .grupo-1 .box h2 {
     color: #131415;
     margin-bottom: 25px;
     font-size: 20px;
-    font-family: "PT sans", cursive;
-    /* margin-left: 15px; */
+    font-family: "Helvetica", sans-serif;
     text-align: center;
   }
 
@@ -153,7 +151,7 @@ export const FooterContentBox = styled.div`
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Helvetica", sans-serif;
   }
 
   .footer .grupo-1 .box .footer__contacto a i {
@@ -183,34 +181,38 @@ export const FooterContentBox = styled.div`
   }
 
   .footer .grupo-2 {
+    width: 100%;
     color: #131415;
-    padding: 15px 10px;
+   /*  padding: 15px 10px; */
     text-align: center;
+    overflow: hidden;
   }
 
   .footer .grupo-2 small {
     font-size: 15px;
     font-family: "Helvetica", sans-serif;
+    padding: 10px;
   }
 
-  .footer .grupo-1 iframe {
-    width: 300px;
-    height: 250px;
-  }
-  @media (max-width: 992px) {
-    footer{
-      overflow: hidden;
+  @media (max-width:992px){
+    .footer{
+      margin-bottom: 0;
+      padding-top: 100px;
     }
     .footer-links {
-      width: 100vw;
-      display: grid;
-      gap: 15px;
+      padding: 0;
+      max-width: 100%;
+      margin: 0 auto;
+      display:grid;
       grid-template-columns: auto;
-      margin: 0;
+      padding: 0;
+      margin-bottom: 0;
+
     }
-    .footer .grupo-1 {
-   
-    overflow: hidden;
-}
+    .grupo-2 {
+      margin-top: 20px;
+      bottom: 0;
+      padding: 0;
+    }
   }
 `;
