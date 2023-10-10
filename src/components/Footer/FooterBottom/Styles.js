@@ -9,6 +9,7 @@ max-width: 100vw;
     background-color: #131415;
     position: absolute;
     z-index: 998;
+    margin-bottom:0;
 .ContentWrapper{
     max-width: 1200px;
     margin: 0 auto;
