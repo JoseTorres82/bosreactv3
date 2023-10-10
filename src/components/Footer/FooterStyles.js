@@ -5,7 +5,6 @@ export const FooterContentBox = styled.div`
   margin: 0 auto;
   max-height: 100vh;
   height: fit-content;
-  /* padding:2rem ; */
   display: flex;
   background: rgb(236, 226, 198);
   color: #fff;
@@ -14,8 +13,6 @@ export const FooterContentBox = styled.div`
   padding-bottom: 0;
 
   .FooterMainBox {
-    /*   max-width: 1200px;
-    margin: 0 auto; */
     width: 100%;
     display: block;
     flex: 35%;
@@ -90,9 +87,7 @@ export const FooterContentBox = styled.div`
     width: 100%;
     text-decoration: none;
     display: block;
-    /* flex-direction: column; */
     text-align: center;
-    /*  margin-top: 35px; */
     z-index: 3;
     bottom: 0;
     display: block;
@@ -102,7 +97,7 @@ export const FooterContentBox = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    /*  padding: 10px; */
+
     color: #131415;
     text-align: center;
     margin-bottom: 0px;
@@ -114,14 +109,10 @@ export const FooterContentBox = styled.div`
     height: fit-content;
     gap: 15px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     padding: 10px;
     justify-items: space-evenly;
     color: #131415;
-    @media (max-width: 761px) {
-      display: grid;
-      justify-items: space-evenly;
-    }
   }
   .footer-links a {
     color: #131313;
@@ -204,5 +195,18 @@ export const FooterContentBox = styled.div`
   .footer .grupo-1 iframe {
     width: 300px;
     height: 250px;
+  }
+  @media (max-width: 761px) {
+    .footer-links {
+      width: 100vw;
+      display: grid;
+      gap: 15px;
+      grid-template-columns: auto;
+      margin: 0;
+    }
+    .footer .grupo-1 {
+   
+    overflow: hidden;
+}
   }
 `;
