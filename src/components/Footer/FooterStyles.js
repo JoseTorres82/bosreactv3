@@ -89,7 +89,7 @@ export const FooterContentBox = styled.div`
     display: block;
     text-align: center;
     z-index: 3;
-    bottom: 0;
+    margin-bottom: 0;
     display: block;
   }
 
