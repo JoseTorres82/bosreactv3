@@ -10,11 +10,16 @@ export const ContactoWrapper = styled.form`
     padding-bottom: 1.5rem;
     border-radius: 3px;
     font-family: 'PT Sans'sans-serif;
-    margin-top: 80px;
+    margin-top: 60px;
     color: #fff;
     h1, h2, h3, h4, li {
     font-family: 'PT Sans',sans-serif;
+    
 }
+@media (max-width:761px){
+    margin-top: 0;
+    padding-top: 0  ;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -96,9 +101,9 @@ export const ContactoWrapper = styled.form`
 
   /* LARGE SIZE */
   @media (min-width: 700px) {
-    body {
+  /*   body {
       padding: 0 4em;
-    }
+    } */
     .contact-wrapper {
       display: grid;
       grid-template-columns: 2fr 1fr;

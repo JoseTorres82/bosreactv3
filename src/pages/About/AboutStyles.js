@@ -13,6 +13,9 @@ export const AboutWrapper = styled.section`
   margin-top: 110px;
   color: #131415;
   position: relative; 
+  @media (max-width:761px){
+    margin-top: 0;
+  }
 `;
 
 export const MediaWrapper = styled.section`

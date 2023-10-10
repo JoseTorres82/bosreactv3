@@ -123,5 +123,14 @@ export const HeaderBottomStyled = styled.div`
     width: 100%;
     font-size: 30px;
   }
-
+  .mobile{
+    display: none;
+  }
+  @media (max-width:992px){
+    .mobile{
+      display: flex;
+      position: absolute;
+      right: 80px;
+    }
+  }
 `;

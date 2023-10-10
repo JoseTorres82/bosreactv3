@@ -1,40 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FooterContentBox } from "./FooterStyles";
+import { FaFacebook, FaInstagram } from "react-icons/fa"; 
 
 function Footer() {
   return (
     <FooterContentBox>
       <div className="FooterMainBox">
-        {/* <p>
-        Buenas Olas Store es indumentaria de entrenamiento que provee calce
-        anatómico, extraordinarios diseños, y propiedades técnicas que incluyen
-        termorregulación, tejidos absorbentes e incremento de oxigenación en los
-        músculos.
-      </p>
-      <Link>AYUDA</Link> 
-      <Link>preguntas frecuentes</Link>
-      <Link>cómo comprar</Link> 
-      <Link>guía de talles</Link> 
-      <Link>pago envío cambios</Link>
-      <Link>términos y condiciones</Link>
-      <Link>MI CUENTA </Link>
-      <Link>registrarme </Link>
-      <Link>ingresar </Link>
-      <Link>mis pedidos </Link>
-      <Link>mis direcciones </Link>
-      <Link>botón de arrepentimiento</Link> 
-      <Link>favoritos </Link>
-      <Link>INSTITUCIONAL </Link>
-      <Link>la empresa </Link>
-      <Link>sucursales </Link>
-      <Link>buscador </Link>
-      <Link>contacto </Link>
-      <Link>instagram </Link>
-      <Link>facebook</Link> */}
-        <div class="ocean">
-          <div class="wave"></div>
-          <div class="wave"></div>
+        <div className="footer">
+          <div className="grupo-1">
+            <div className="box">
+              <div className="footer-name">
+                <h1>Buenas Olas Store</h1>
+              </div>
+              <div className="box">
+                <div className="redes">
+                  <a href="#">
+                    <FaFacebook /> 
+                  </a>
+                  <a href="#">
+                    <FaInstagram /> 
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="footer-links">
+              <Link to="/">Términos y condiciones</Link>
+              <Link to="/">Cambios y devoluciones</Link>
+              <Link to="/">Cuidados</Link>
+              <Link to="/Nosotros">Nosotros</Link>
+              <Link to="/Contacto">Contacto</Link>
+            </div>
+            <div className="grupo-2">
+              <small>
+                &copy; 2023 <b>Buenas Olas Store - Mar del Plata BA-ARG</b> -
+                Todos los derechos reservados.
+              </small>
+            </div>
+          </div>
+        </div>
+        <div className="ocean">
+          <div className="wave"></div>
+          <div className="wave"></div>
         </div>
       </div>
     </FooterContentBox>

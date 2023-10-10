@@ -16,6 +16,10 @@ export const HeroStyledContainer = styled.div`
     align-content: center;
     border-bottom: solid 1px #333;
     user-select: none;
+    @media (max-width:992px) {
+      margin-top: 0px;
+      
+    }
 
   .HeroContainerStyles {
     width: 50%;
@@ -56,6 +60,11 @@ export const HeroStyledContainer = styled.div`
     }
     .HeroSiderContainer{
       display: none;
+    }
+  }
+  @media (max-width:992px){
+    .HeroContainerStyles{
+      margin-top: 0;
     }
   }
   @media (max-width:761px){
