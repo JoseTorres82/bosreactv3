@@ -6,13 +6,11 @@ export const HeaderBottomStyled = styled.div`
   height: 80px;
   position: relative;
   width: 100%;
-  z-index: 1000; 
-  transition: background-color 0.3s ease; 
+  z-index: 1000;
+  transition: background-color 0.3s ease;
   margin-bottom: 20px;
   background-color: #fff;
   color: #000;
-
-
 
   .container {
     max-width: 100vw;
@@ -25,13 +23,11 @@ export const HeaderBottomStyled = styled.div`
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    transition: all .2s;
-    
-       &.scrolled {
-    background-color: rgb(236, 226, 198);
-  }
+    transition: all 0.2s;
 
-
+    &.scrolled {
+      background-color: rgb(236, 226, 198);
+    }
   }
 
   .ContenedorNavegacion {
@@ -42,8 +38,6 @@ export const HeaderBottomStyled = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 5px; */
- 
   }
 
   .logoContainer {
@@ -65,7 +59,7 @@ export const HeaderBottomStyled = styled.div`
 
     span {
       font-size: 1rem;
-      font-weight: bold; 
+      font-weight: bold;
       margin-top: 0;
       margin-left: 0;
     }
@@ -92,7 +86,7 @@ export const HeaderBottomStyled = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       /* text-shadow: rgb(236, 226, 198) 0px 1px 8px; */
-      text-shadow: rgb(220, 230 ,250 ) 0.5px 5px 15px   ;
+      text-shadow: rgb(220, 230, 250) 0.5px 5px 15px;
     }
   }
 
@@ -123,11 +117,11 @@ export const HeaderBottomStyled = styled.div`
     width: 100%;
     font-size: 30px;
   }
-  .mobile{
+  .mobile {
     display: none;
   }
-  @media (max-width:992px){
-    .mobile{
+  @media (max-width: 992px) {
+    .mobile {
       display: flex;
       position: absolute;
       right: 80px;

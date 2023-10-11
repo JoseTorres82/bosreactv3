@@ -183,7 +183,6 @@ export const FooterContentBox = styled.div`
   .footer .grupo-2 {
     width: 100%;
     color: #131415;
-   /*  padding: 15px 10px; */
     text-align: center;
     overflow: hidden;
   }

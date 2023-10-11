@@ -6,7 +6,7 @@ import { MobileMenuContainer } from './MenuHamburguesaStyles';
 
 function MenuHamburguesa() {
   const { isMenuOpen, closeMenu } = useMenu();
-  const isMobile = window.innerWidth <= 761; // Verifica el ancho de la pantalla
+  const isMobile = window.innerWidth <= 761; 
 
   return (
     <>

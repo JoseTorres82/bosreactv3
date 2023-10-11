@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { HeaderBottomStyled } from './HeaderBottomStyles';
+import React, { useEffect, useState } from "react";
+import { HeaderBottomStyled } from "./HeaderBottomStyles";
 
-import { TfiBag } from 'react-icons/tfi';
-import { Link } from 'react-router-dom';
+
+import { TfiBag } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 function HeaderBottom() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,17 +17,17 @@ function HeaderBottom() {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <HeaderBottomStyled >
-   
-      <div className={isScrolled ? 'scrolled container' : ''}>
+    <HeaderBottomStyled>
+      <div className={isScrolled ? "scrolled container" : ""}>
         <div className="ContenedorNavegacion">
           <div className="logoContainer">
             <Link to="/">
@@ -36,6 +37,7 @@ function HeaderBottom() {
               </h1>
             </Link>
           </div>
+        
           <div className="bagContainer">
             <span>0</span>
             <TfiBag className="bag" />
@@ -47,4 +49,3 @@ function HeaderBottom() {
 }
 
 export default HeaderBottom;
-

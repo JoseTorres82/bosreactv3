@@ -10,6 +10,7 @@ max-width: 100vw;
     position: absolute;
     z-index: 998;
     margin-bottom:0;
+
 .ContentWrapper{
     max-width: 1200px;
     margin: 0 auto;
@@ -18,6 +19,7 @@ max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     h3{
         text-align: center;

@@ -4,15 +4,11 @@ export const ProductosWrapper = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* margin-top: 15px; */
-  font-family: "PT Sans", sans-serif;
-  /*   padding: 1rem; */
+
+  font-family: "Helvetica", sans-serif;
+
   margin-top: 30px;
-  /*   @media (min-width: 320px) {
-    margin: 0 auto;
-    margin-top: 50px;
-  } */
-  /* Agrega este CSS a tu archivo de estilos o componente CSS-in-JS */
+  
 
 .search-container {
   position: relative;
@@ -53,7 +49,6 @@ export const ProductosWrapper = styled.section`
     margin: 0 auto;
     width: 100%;
     text-align: center;
-   /*  padding: 10px; */
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;

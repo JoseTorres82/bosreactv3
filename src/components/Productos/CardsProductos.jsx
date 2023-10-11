@@ -28,7 +28,6 @@ const CardsProductos = () => {
   return (
     <ProductosWrapper>
       <h2 id='destacados'>Nuestra Colección</h2>
-      {/* <img src="/images/1.jpg" alt="" /> */}
       <div className="btns-filter">
         <button onClick={showAllProducts}>Mostrar Todos</button>
         <button onClick={() => filterByCategory('Calzas')}>Calzas</button>

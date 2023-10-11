@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MobileMenuContainer = styled.div`
-  // Estilos generales aquí
+
 
   @media (max-width: 761px) {
     position: absolute;
