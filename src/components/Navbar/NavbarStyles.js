@@ -89,11 +89,10 @@ export const BurgerLinks = styled.nav`
 export const ContenedorLinks = styled.div`
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-  gap: 15px;
-
+  height: 60%;
+  
   a {
     color: #f5f5f5;
   }
