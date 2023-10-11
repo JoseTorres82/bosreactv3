@@ -17,7 +17,7 @@ export const ContactoWrapper = styled.form`
     
 }
 @media (max-width:761px){
-    margin-top: 0;
+    margin-top: 110;
     padding-top: 0  ;
   }
   ul {
@@ -119,7 +119,7 @@ export const ContactoWrapper = styled.form`
   }
   @media (max-width: 576px) {
   }
-  .container {
+ /*  .container {
     max-width: 500px;
     margin: 0 auto;
     width: 100%;
@@ -127,5 +127,12 @@ export const ContactoWrapper = styled.form`
     margin-right: auto;
     padding: 1.5em;
     border-radius: 3px;
-  }
+  } */
+  .contact-info p {
+    text-align: left;
+    margin: 0 0 1rem 0;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-left: 5px;
+}
 `;

@@ -10,11 +10,11 @@ export const AboutWrapper = styled.section`
   line-height: 1.6;
   letter-spacing: 1px;
   font-family: "PT Sans", sans-serif;
-  margin-top: 110px;
+  margin-top: 100px;
   color: #131415;
   position: relative; 
   @media (max-width:761px){
-    margin-top: 0;
+    margin-top: 20;
   }
 `;
 
