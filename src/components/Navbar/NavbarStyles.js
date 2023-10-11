@@ -16,8 +16,9 @@ export const NavbarContainer = styled.div`
     margin-top: -20px;
     position: fixed;
     z-index: 999;
-    background: #131415;
-    .burguer{
+    /*  background: #131415; */
+    background: #6e6043;
+    .burguer {
       display: none;
     }
     a:visited {
@@ -41,9 +42,9 @@ export const Navlinks = styled.nav`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   z-index: 99;
- /*  background-color: #fdfcfc; */
+  /*  background-color: #fdfcfc; */
   color: #000;
- 
+
   @media (max-width: 761px) {
     display: none;
   }
@@ -74,12 +75,14 @@ export const BurgerLinks = styled.nav`
   position: fixed;
   width: 90vw;
   height: 100%;
-  background-color: #131415;
+  /*  background-color: #131415; */
+  background: #6e6043;
   top: 4.8rem;
-  gap: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1px;
   right: ${(props) => (props.isMenuOpen ? "0" : "-100%")};
   transition: right 0.3s ease-in-out;
-
 
   @media (max-width: 761px) {
     display: block;
@@ -92,7 +95,7 @@ export const ContenedorLinks = styled.div`
   justify-content: space-evenly;
   align-items: center;
   height: 60%;
-  
+
   a {
     color: #f5f5f5;
   }
@@ -100,6 +103,4 @@ export const ContenedorLinks = styled.div`
   a:visited {
     color: #f5f5f5;
   }
-
 `;
-
