@@ -9,6 +9,9 @@ export const SliderHeroContainer = styled.div`
   position: relative;
   margin-top: 30px;
   opacity: 95%;
+  @media (max-width:992px){
+    margin-top: 130px;
+  }
 
   img {
     width: 350px;

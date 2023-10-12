@@ -50,7 +50,6 @@ const Sugeridos = () => {
               <CardPrice>${product.price}</CardPrice>
             </ContainerPrice>
             <ContainerBtnAdd>
-              {/* Me Falta Agregar un botón para agregar  */}
             </ContainerBtnAdd>
           </ProductosCard>
         ))}

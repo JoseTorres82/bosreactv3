@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { HeaderBottomStyled } from "./HeaderBottomStyles";
-
-
-import { TfiBag } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import CartIcon from "./CartIcon/CartIcon";
 
 function HeaderBottom() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 80) {
@@ -18,12 +17,19 @@ function HeaderBottom() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const [isOpen, setOpen] = useState(false);
+
+  const openCart = () => {
+    setIsCartOpen(true);
+    <CartOverlay/>
+  };
+
+  const closeCart = () => {
+    setIsCartOpen(false);
+  };
 
   return (
     <HeaderBottomStyled>
@@ -37,13 +43,10 @@ function HeaderBottom() {
               </h1>
             </Link>
           </div>
-        
-          <div className="bagContainer">
-            <span>0</span>
-            <TfiBag className="bag" />
-          </div>
+          <CartIcon/>
         </div>
       </div>
+      
     </HeaderBottomStyled>
   );
 }

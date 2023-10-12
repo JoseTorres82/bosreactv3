@@ -128,3 +128,44 @@ export const HeaderBottomStyled = styled.div`
     }
   }
 `;
+
+export const CartIconStyled = styled.div`
+  display: flex;
+  .bagContainer {
+    width: 60px;
+    height: auto;
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    span {
+      color: #fff;
+      background-color: red;
+      padding: 2%;
+      border-radius: 50%;
+      width: 30%;
+      height: auto;
+      font-weight: 400;
+      text-align: center;
+      position: absolute;
+      margin-right: 35px;
+    }
+  }
+  .bag {
+    max-width: 250px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 30px;
+  }
+  .mobile {
+    display: none;
+  }
+  @media (max-width: 992px) {
+    .mobile {
+      display: flex;
+      position: absolute;
+      right: 80px;
+    }
+  }
+`;

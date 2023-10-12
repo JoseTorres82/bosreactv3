@@ -1,4 +1,9 @@
-  export const products = [
+import React, { createContext, useState } from 'react';
+
+export const ProductContext = createContext();
+
+export const ProductProvider = ({ children }) => {
+  const [products, setProducts] = useState(
     {
       id: 1,
       title: "Calzas Elegance",
@@ -121,5 +126,18 @@
       category: "Buzos",
       img: "/images/img21.webp",
     },
-  ];
-  
+
+  );
+  const [cart, setCart] = useState([]);
+
+  // Función para agregar un producto al carrito
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
+  return (
+    <ProductContext.Provider value={{ products, addToCart, cart }}>
+      {children}
+    </ProductContext.Provider>
+  );
+};

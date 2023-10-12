@@ -33,12 +33,15 @@ export const MediaWrapper = styled.section`
   position: relative;
 
   img {
+    max-width: 1200px;
+    margin: 0 auto ;
     width: 100%;
     position: relative;
     z-index: 1; 
+    display: flex;
     opacity: 35%;
     background-color: #333;
-    border-radius: 15px;
+    border-radius: 5px;
     height: auto;
   }
 

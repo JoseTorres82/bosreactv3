@@ -1,19 +1,25 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useCart } from "../../../Context/CartContext.jsx";
 
+function ButtonAdd({ product }) {
+  const { dispatch } = useCart();
 
-
-const ButtonAdd = ({ product }) => {
-  const { addToCart } = useContext(/* CartContext */);
-
-  const handleAddToCart = () => {
-
-    addToCart(product);
-  };
+  const addToCart = (event) => {
+    event.preventDefault();
+    if (product) {
+      dispatch({ type: "ADD_TO_CART", payload: product });
+    } else {
+      console.error("Product is not defined.");
+    }
+  }
 
   return (
-   <button onClick={handleAddToCart}><span>Agregar</span></button>
-     
+    <form onSubmit={addToCart}>
+      <button type="submit">
+        Agregar +
+      </button>
+    </form>
   );
-};
+}
 
 export default ButtonAdd;

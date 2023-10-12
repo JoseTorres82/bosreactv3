@@ -12,6 +12,7 @@ export const NavbarContainer = styled.div`
   transition: all 0.2s;
   position: relative;
 
+
   &.scrolled {
     margin-top: -20px;
     position: fixed;
@@ -42,6 +43,8 @@ export const Navlinks = styled.nav`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   z-index: 99;
+  border-top: #6e6043 solid 1px;
+  border-bottom: #6e6043 solid 1px;
   /*  background-color: #fdfcfc; */
   color: #000;
 
