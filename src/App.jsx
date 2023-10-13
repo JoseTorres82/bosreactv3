@@ -8,26 +8,25 @@ import Footer from "./components/Footer/Footer";
 import FooterBottom from "./components/Footer/FooterBottom/FooterBottom";
 import { ModalProvider } from "./Context/ModalContext";
 import { CartProvider } from "./Context/CartContext";
-import { ProductProvider } from "./data/ProductContext"; 
-
+import { ProductProvider } from "./data/ProductContext";
 
 function App() {
   return (
     <Router>
-      <MenuProvider>
-       <ModalProvider>
-          <CartProvider>
-          <Header />
-            <ProductProvider> 
+      <ModalProvider>
+        <CartProvider>
+          <MenuProvider>
+            <Header />
+            <ProductProvider>
               <Layout>
                 <Routes />
               </Layout>
             </ProductProvider>
             <Footer />
-          </CartProvider>
-        </ModalProvider>
-      </MenuProvider>
-      <FooterBottom />
+          </MenuProvider>
+        </CartProvider>
+        <FooterBottom />
+      </ModalProvider>
     </Router>
   );
 }

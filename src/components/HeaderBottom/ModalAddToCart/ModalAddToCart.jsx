@@ -8,7 +8,7 @@ const ModalContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 777; /* Valor alto para estar por delante de otros elementos */
+  z-index: 777; 
   background-color: aliceblue;
   color: #131415;
   text-align: center;
@@ -24,7 +24,7 @@ const ModalAddToCart = ({ product, actionType }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 20000); // Ocultar el modal después de 20 segundos
+    }, 20000); 
 
     return () => {
       clearTimeout(timer);

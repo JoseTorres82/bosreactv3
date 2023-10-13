@@ -11,6 +11,8 @@ export const HeaderBottomStyled = styled.div`
   margin-bottom: 20px;
   background-color: #fff;
   color: #000;
+  display: flex;
+  flex-direction: column;
 
   .container {
     max-width: 100vw;
@@ -27,6 +29,9 @@ export const HeaderBottomStyled = styled.div`
 
     &.scrolled {
       background-color: rgb(236, 226, 198);
+      .cart-overlay{
+      margin-top: 0;
+    }
     }
   }
 
@@ -89,7 +94,10 @@ export const HeaderBottomStyled = styled.div`
       text-shadow: rgb(220, 230, 250) 0.5px 5px 15px;
     }
   }
-
+  button {
+    border: none !important;
+    background: transparent;
+  }
   .bagContainer {
     width: 60px;
     height: auto;
@@ -125,6 +133,9 @@ export const HeaderBottomStyled = styled.div`
       display: flex;
       position: absolute;
       right: 80px;
+    }
+     .cart-overlay{
+      margin-top: 0;
     }
   }
 `;
@@ -150,6 +161,7 @@ export const CartIconStyled = styled.div`
       text-align: center;
       position: absolute;
       margin-right: 35px;
+      z-index: 888;
     }
   }
   .bag {
@@ -167,5 +179,80 @@ export const CartIconStyled = styled.div`
       position: absolute;
       right: 80px;
     }
+  }
+`;
+export const CartContainer = styled.div`
+  max-width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
+  position: fixed;
+  top: 3rem !important;
+  right: 0;
+  padding: 2rem;
+  overflow: hidden;
+  overflow-y: scrolled;
+  background: transparent;
+  
+  .cart-overlay {
+    max-width: 100vw;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    color: #fff;
+    margin-top: 19px;
+ 
+    button{
+      width: 100px;
+      background:#f76b1c ;
+      display: block;
+      padding:  5px;
+      gap: 15px;
+    }
+  }
+  .cart-content {
+ /*    max-width: 80vw;
+    margin: 0 auto;
+    width: 100%;
+    background: #000;
+    padding-right: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    margin: auto 35px;
+    padding: 33px 33px 35px;
+    justify-items: center;
+    border-radius: 0px 10px 0px; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 1px;
+
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
   }
 `;
