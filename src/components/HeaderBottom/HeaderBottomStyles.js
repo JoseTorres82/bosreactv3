@@ -181,7 +181,12 @@ export const CartContainer = styled.div`
   ::-webkit-scrollbar {display: none;}
  
   
-
+  .closeCartSignal{
+    position:absolute !important ;
+    right: 20px;
+    top: -23px;
+    font-size: 36px;
+  }
   .cartItems {
     width: 100%;
     height: 100px;
@@ -276,6 +281,7 @@ export const CartContainer = styled.div`
 
     .cartItem{
       width: 100vw;
+      height: 100vh;
       padding: 0;
       margin: 0;
     }

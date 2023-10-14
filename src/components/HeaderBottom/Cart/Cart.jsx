@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useCart } from "../../../Context/CartContext";
+import {RxTriangleUp} from "react-icons/rx"
 
 function CartItem({ item }) {
   const { dispatch } = useCart();
@@ -36,6 +37,7 @@ function Cart() {
   const { cart, dispatch, getTotalItemsInCart } = useCart();
   const [showModal, setShowModal] = useState(null);
 
+
   const calculateTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
@@ -60,6 +62,9 @@ function Cart() {
 
   return (
     <div className="cartItem">
+        <div className="closeCartSignal">
+        <RxTriangleUp />
+        </div>
       <h2>Tus Articulos</h2>
       {cart.map((item) => (
         <CartItem key={item.id} item={item} />
