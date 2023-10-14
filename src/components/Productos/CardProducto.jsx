@@ -8,22 +8,8 @@ import {
   ContainerPrice,
   ProductosCard,
 } from "./CardsProductosStyles";
-import styled from "styled-components";
 
-const ModalContainer = styled.div`
-  display: flex;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 998;
-  background-color: #f4511e;
-  padding: 20px;
-  color: #FFFF;
-  border: 1px solid #ccc;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  box-shadow: -8px 9px 10px rgba(0, 0, 0, 0.2);
-`;
+
 
 function mostrarImagenDefault(event) {
   event.target.src = '/bo_Logo.svg';
@@ -42,7 +28,6 @@ const CardProducto = ({ id, img, title, desc, price }) => {
   const handleAddToCart = () => {
     const product = {
       id,
-      img,
       title,
       desc,
       price,
@@ -56,16 +41,8 @@ const CardProducto = ({ id, img, title, desc, price }) => {
   };
 
   useEffect(() => {
-    if (showModal) {
-      const timer = setTimeout(() => {
-        setShowModal(false);
-      }, 20000); // Ocultar el modal después de 20 segundos
-
-      return () => {
-        clearTimeout(timer);
-      };
-    }
-  }, [showModal]);
+    
+  }, );
 
   return (
     <ProductosCard>
@@ -81,13 +58,9 @@ const CardProducto = ({ id, img, title, desc, price }) => {
         <CardPrice>${price}</CardPrice>
       </ContainerPrice>
       <ContainerBtnAdd>
-        <ButtonAdd onClick={handleAddToCart} product={{ id, img, title, desc, price }} />
+        <ButtonAdd onClick={handleAddToCart} product={{ id, title, desc, price }} />
       </ContainerBtnAdd>
-      {showModal && productToAdd && (
-        <ModalContainer>
-          Agregaste {productToAdd.title} al carrito
-        </ModalContainer>
-      )}
+     
     </ProductosCard>
   );
 }

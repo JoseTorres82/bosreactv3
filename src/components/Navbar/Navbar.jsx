@@ -34,6 +34,8 @@ function Navbar() {
   const handleBurgerClick = () => {
     if (window.innerWidth <= 761) {
       isMenuOpen ? closeMenu() : openMenu();
+      setIsScrolled(true);
+     
     }
   };
 

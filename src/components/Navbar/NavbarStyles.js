@@ -11,6 +11,7 @@ export const NavbarContainer = styled.div`
   font-family: "Montserrat", sans-serif;
   transition: all 0.2s;
   position: relative;
+  
 
 
   &.scrolled {
@@ -25,6 +26,7 @@ export const NavbarContainer = styled.div`
     a:visited {
       color: #f5f5f5;
     }
+    box-shadow: 0 8px 6px -6px #333;
   }
 `;
 
@@ -32,7 +34,7 @@ export const Navlinks = styled.nav`
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  height: 3.8rem;
+  height: 2.8rem  ;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -76,7 +78,7 @@ export const Navlinks = styled.nav`
 export const BurgerLinks = styled.nav`
   display: none;
   position: fixed;
-  width: 90vw;
+  width: 85vw;
   height: 100%;
   /*  background-color: #131415; */
   background: #6e6043;

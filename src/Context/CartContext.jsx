@@ -52,9 +52,9 @@ export function CartProvider({ children }) {
     const { id } = product;
     const existingProduct = cart.find(item => item.id === id);
     if (existingProduct) {
-      dispatch({ type: "ADD_TO_CART", payload: product }); // Aumentar cantidad si ya existe
+      dispatch({ type: "ADD_TO_CART", payload: product }); 
     } else {
-      dispatch({ type: "ADD_TO_CART", payload: product }); // Agregar al carrito si no existe
+      dispatch({ type: "ADD_TO_CART", payload: product }); 
     }
   };
 
@@ -72,7 +72,7 @@ export function CartProvider({ children }) {
 export function useCart() {
   const context = useContext(CartContext);
   if (!context) {
-    throw  Error("useCart debe usarse dentro de un CartProvider");
+    throw new Error("useCart debe usarse dentro de un CartProvider");
   }
   return context;
 }
