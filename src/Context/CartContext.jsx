@@ -6,9 +6,9 @@ const cartReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
       const { id } = action.payload;
-      const existingProduct = state.find(item => item.id === id);
-      if (existingProduct) {
-        const updatedCart = state.map(item => {
+      const existingProductIndex = state.findIndex((item) => item.id === id);
+      if (existingProductIndex !== -1) {
+        const updatedCart = state.map((item) => {
           if (item.id === id) {
             return { ...item, quantity: item.quantity + 1 };
           }
@@ -19,11 +19,19 @@ const cartReducer = (state, action) => {
         return [...state, { ...action.payload, quantity: 1 }];
       }
     case "REMOVE_FROM_CART":
-      return state.filter(item => item.id !== action.payload.id);
+      return state.filter((item) => item.id !== action.payload.id);
+    case "DECREASE_QUANTITY":
+      const updatedCart = state.map((item) => {
+        if (item.id === action.payload.id) {
+          if (item.quantity > 1) {
+            return { ...item, quantity: item.quantity - 1 };
+          }
+        }
+        return item;
+      });
+      return updatedCart;
     case "CLEAR_CART":
       return [];
-    case "SHOW_MODAL":
-      return state;
     default:
       return state;
   }
@@ -35,8 +43,8 @@ export function CartProvider({ children }) {
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem("cart"));
     if (savedCart && savedCart.length > 0) {
-      dispatch({ type: "CLEAR_CART" }); 
-      savedCart.forEach(item => dispatch({ type: "ADD_TO_CART", payload: item }));
+      dispatch({ type: "CLEAR_CART" });
+      savedCart.forEach((item) => dispatch({ type: "ADD_TO_CART", payload: item }));
     }
   }, []);
 
@@ -50,11 +58,11 @@ export function CartProvider({ children }) {
 
   const addToCart = (product) => {
     const { id } = product;
-    const existingProduct = cart.find(item => item.id === id);
-    if (existingProduct) {
-      dispatch({ type: "ADD_TO_CART", payload: product }); 
+    const existingProductIndex = cart.findIndex((item) => item.id === id);
+    if (existingProductIndex !== -1) {
+      dispatch({ type: "ADD_TO_CART", payload: product });
     } else {
-      dispatch({ type: "ADD_TO_CART", payload: product }); 
+      dispatch({ type: "ADD_TO_CART", payload: product });
     }
   };
 
@@ -76,4 +84,3 @@ export function useCart() {
   }
   return context;
 }
-

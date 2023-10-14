@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { useCart } from "../../../Context/CartContext";
-import {RxTriangleUp} from "react-icons/rx"
+import { RxTriangleUp } from "react-icons/rx";
 
 function CartItem({ item }) {
   const { dispatch } = useCart();
 
   const increaseQuantity = () => {
-    dispatch({ type: "ADD_TO_CART", payload: item });
+    const updatedItem = { ...item, quantity: item.quantity + 1 };
+    dispatch({ type: "ADD_TO_CART", payload: updatedItem });
   };
 
   const decreaseQuantity = () => {
-    dispatch({ type: "REMOVE_FROM_CART", payload: item });
+    if (item.quantity > 1) {
+      const updatedItem = { ...item, quantity: item.quantity - 1 };
+      dispatch({ type: "DECREASE_QUANTITY", payload: updatedItem });
+    }
   };
 
   const removeItem = () => {
@@ -22,11 +26,11 @@ function CartItem({ item }) {
       <div className="itemDesc">
         <p>{item.title}</p>
         <p> ${item.price * item.quantity}</p>
-            <div className="quantity">
+        <div className="quantity">
           <button onClick={increaseQuantity}>+</button>
           <p> {item.quantity}</p>
           <button onClick={decreaseQuantity}>-</button>
-            </div>
+        </div>
         <button onClick={removeItem}>Eliminar</button>
       </div>
     </div>
@@ -37,19 +41,20 @@ function Cart() {
   const { cart, dispatch, getTotalItemsInCart } = useCart();
   const [showModal, setShowModal] = useState(null);
 
-
   const calculateTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
   const handleCheckout = () => {
     setShowModal("Gracias por tu compra");
-    dispatch({ type: "CLEAR_CART" }); // <--- Esto vacia el carrito
+    dispatch({ type: "CLEAR_CART" });
+    localStorage.removeItem("cart");
   };
 
   const handleClearCart = () => {
     setShowModal("El Carrito se vació correctamente");
-    dispatch({ type: "CLEAR_CART" }); // Vaciar el carrito
+    dispatch({ type: "CLEAR_CART" });
+    localStorage.removeItem("cart");
   };
 
   useEffect(() => {
@@ -60,11 +65,16 @@ function Cart() {
     }
   }, [cart]);
 
+  useEffect(() => {
+    // Guardar el carrito en el localStorage cuando cambie
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   return (
     <div className="cartItem">
-        <div className="closeCartSignal">
+      <div className="closeCartSignal">
         <RxTriangleUp />
-        </div>
+      </div>
       <h2>Tus Articulos</h2>
       {cart.map((item) => (
         <CartItem key={item.id} item={item} />
