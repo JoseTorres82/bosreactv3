@@ -180,14 +180,7 @@ export const CartContainer = styled.div`
   letter-spacing: 1px;
   ::-webkit-scrollbar {display: none;}
  
-  @media (max-width: 560px) {
-    width: 100vw;
-    margin: auto;
-    padding: 0;
-    right: 0;
-    display: inline-block;
-    text-align: center;
-  }
+  
 
   .cartItems {
     width: 100%;
@@ -272,5 +265,29 @@ export const CartContainer = styled.div`
     padding: 10px;
 
 
+  }
+  @media (max-width: 560px) {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    display: inline-block;
+    text-align: center;
+
+    .cartItem{
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+    }
+    .itemDesc{
+      width: 90vw;
+      padding: 0;
+      margin: 0;
+    }
+    .quantity{
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+    }
   }
 `;
